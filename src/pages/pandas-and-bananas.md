@@ -8,7 +8,7 @@ seem to really enjoy bananas!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/4SZl1r2O_bY" frameborder="0" allowfullscreen></iframe>
 
-```javascript{1, 7-9}
+```javascript{1,7-9}
 import React from 'react'
 
 export default class C extends React.Component {
