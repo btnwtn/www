@@ -17,7 +17,9 @@ export default ({ data }) => (
           </Link>
         </h1>
         <Link to={node.fields.permalink}>
-          <p>{node.excerpt}</p>
+          <p>
+            {node.frontmatter.excerpt ? node.frontmatter.excerpt : node.excerpt}
+          </p>
         </Link>
       </section>
     ))}
@@ -33,6 +35,7 @@ export const query = graphql`
           id
           frontmatter {
             title
+            excerpt
             date(formatString: "DD MMMM, YYYY")
           }
           excerpt
