@@ -1,7 +1,7 @@
 ---
 title: "Higher-Order Components (HOCs) for Beginners"
 excerpt: "A gentle introduction to Higher-Order Components"
-published: "2017-7-16"
+date: "2017-07-16"
 ---
 
 ## Preface

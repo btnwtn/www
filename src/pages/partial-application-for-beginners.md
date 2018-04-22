@@ -1,7 +1,7 @@
 ---
 title: Partial Application for Beginners
 excerpt: "Understanding partial application."
-published: "2017-8-2"
+date: "2017-08-02"
 ---
 
 ## Why Use Partial Application?

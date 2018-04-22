@@ -2,7 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 require('prismjs/themes/prism-solarizedlight.css')
-require('./prism-highlight.css')
+require('./prism.css')
+require('./global.css')
 
 const Layout = ({ children, data }) => (
   <div>
