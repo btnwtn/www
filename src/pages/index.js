@@ -9,14 +9,14 @@ export default ({ data }) => (
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <section key={node.id}>
         <h1>
-          <Link to={node.fields.slug}>
+          <Link to={node.fields.permalink}>
             {node.frontmatter.title}{' '}
             <span style={{ fontSize: '1rem', color: '#65767d' }}>
               {node.frontmatter.date}
             </span>
           </Link>
         </h1>
-        <Link to={node.fields.slug}>
+        <Link to={node.fields.permalink}>
           <p>{node.excerpt}</p>
         </Link>
       </section>
@@ -38,6 +38,7 @@ export const query = graphql`
           excerpt
           fields {
             slug
+            permalink
           }
         }
       }
