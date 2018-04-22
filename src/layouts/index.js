@@ -4,16 +4,7 @@ import Helmet from 'react-helmet'
 const Layout = ({ children, data }) => (
   <div>
     <Helmet title={data.site.siteMetadata.title} />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0,
-      }}
-    >
-      {children()}
-    </div>
+    <div>{children()}</div>
   </div>
 )
 

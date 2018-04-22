@@ -3,6 +3,6 @@ import Link from 'gatsby-link'
 
 export default () => (
   <div>
-    yo <Link to="/page2">page 2</Link>
+    yo <Link to="/files">files</Link>
   </div>
 )
