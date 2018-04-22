@@ -1,6 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
+require('prismjs/themes/prism-solarizedlight.css')
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet title={data.site.siteMetadata.title} />
