@@ -22,6 +22,12 @@ code[class*='language-'] {
     'Ubuntu Mono', monospace;
 }
 
+/* inline code blocks */
+:not(pre) > code[class*="language-"] {
+    font-size: .8em;
+    color: #586e75;
+}
+
 .gatsby-highlight-code-line {
   background-color: #feb;
   display: block;

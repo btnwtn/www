@@ -79,7 +79,7 @@ console.log(add)
 
 Function expressions enable us to pass functions around like any other value.
 This means you can pass a function as an argument to another function
-(e.g. `map(function () {})`), and return a function from a function:
+(e.g. `js±map(function () {})`), and return a function from a function:
 
 ```js
 const fn = function () {
@@ -204,7 +204,7 @@ add5(10)
 ```
 
 The function `add5` calls `add`, and fixes (binds) the value `5` to `x`. `add`
-returns the inner function, and replaces `x` with the fixed value: `ƒ (y) { return 5 + y }`.
+returns the inner function, and replaces `x` with the fixed value: `js±ƒ (y) { return 5 + y }`.
 
 When we do this, we have *partially applied* the function `add`. Which has
 produced a function (`add5`) that we can use in different ways from the

@@ -3,9 +3,7 @@ import Link from 'gatsby-link'
 
 export default ({ data }) => (
   <div>
-    <h1>BRandons Kewl Website</h1>
-    yo <Link to="/files">files</Link>
-    <h2>Blog Posts: {data.allMarkdownRemark.totalCount}</h2>
+    <h1>btnwtn</h1>
     {data.allMarkdownRemark.edges.map(({ node }) => (
       <section key={node.id}>
         <h1>

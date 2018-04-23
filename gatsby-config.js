@@ -19,7 +19,7 @@ module.exports = {
 
             options: {
               classPrefix: 'language-',
-              inlineCodeMarker: null,
+              inlineCodeMarker: '±',
               aliases: {},
             },
           },
