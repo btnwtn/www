@@ -131,7 +131,7 @@ multiply(100)(5)
 
 This may not seem super useful at first. However, you can use partial application to write code that is easier to read and reason about. For example, we can replace [`styled-components`](https://www.styled-components.com/docs/basics#adapting-based-on-props) complex function interpolation syntax with something a bit cleaner.
 
-```js
+```jsx
 // before
 const Button = styled.button`
   background-color: ${({ theme }) => theme.bgColor}
@@ -139,9 +139,7 @@ const Button = styled.button`
 `
 
 <Button theme={themes.primary}>Submit</Button>
-```
 
-```js
 // after
 const fromTheme = (prop) => ({ theme }) => theme[prop]
 
@@ -155,7 +153,7 @@ const Button = styled.button`
 
 We create a function that accepts a string as a parameter: `fromTheme("textColor")`, which returns a function accepting an object with a `theme` property: `({ theme }) => theme[prop]`, which we then attempt to lookup via the initial string we passed in `"textColor"`. We could go further and write functions like `backgroundColor` and `textColor` that partially apply the `fromTheme` function:
 
-```js
+```jsx
 const fromTheme = (prop) => ({ theme }) => theme[prop]
 const backgroundColor = fromTheme("bgColor")
 const textColor = fromTheme("textColor")
@@ -205,7 +203,7 @@ console.log(map(square, [1, 2, 3, 4, 5]))
 
 Or return an array of `<li>` React Elements:
 
-```js
+```jsx
 const HeroList = ({ heroes }) => (
   <ul>
     {map((hero) => (
@@ -236,7 +234,7 @@ const HeroList = ({ heroes }) => (
 
 We know that a higher-order function is a function that accepts a function as an argument. In React, any function that returns [`JSX`](https://facebook.github.io/react/docs/jsx-in-depth.html) is known as a Stateless Functional Component, or Functional Component for short. A basic Functional Component looks like this:
 
-```js
+```jsx
 const Title = (props) => <h1>{props.children}</h1>
 
 <Title>Higher-Order Components(HOCs) for React Newbies</Title>
@@ -245,7 +243,7 @@ const Title = (props) => <h1>{props.children}</h1>
 
 A Higher-Order Component ==is a function that accepts a Component as an argument and returns a Component==. How you use the passed Component is up to you. You can even completely disregard it:
 
-```js
+```jsx
 // Technically an HOC
 const ignore = (anything) => (props) => <h1>:)</h1>
 
@@ -256,7 +254,7 @@ const IgnoreHeroList = ignore(HeroList)
 
 You can write an HOC that transforms it's input to uppercase:
 
-```js
+```jsx
 const yell = (PassedComponent) =>
   ({ children, ...props }) =>
     <PassedComponent {...props}>
@@ -272,7 +270,7 @@ const AngryTitle = yell(Title)
 
 You can also return a Stateful Component, because classes in Javascript are syntax sugar for functions. This allows you to hook into React Lifecycle methods like `componentDidMount`. This is where HOCs become really useful. We can now do things like pass down the result of an HTTP request as props to a Functional Component.
 
-```js
+```jsx
 const withGists = (PassedComponent) =>
   class WithGists extends React.Component {
     state = {
