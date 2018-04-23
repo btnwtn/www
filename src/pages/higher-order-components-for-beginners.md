@@ -212,13 +212,13 @@ const HeroList = ({ heroes }) => (
   </ul>
 )
 
-<HeroList heroes=[
+<HeroList heroes={[
   "Wonder Woman",
   "Black Widow",
   "Spider Man",
   "Storm",
   "Deadpool"
-]/>
+]}/>
 /*=> (
   <ul>
     <li>Wonder Woman</li>
