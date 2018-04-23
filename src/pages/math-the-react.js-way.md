@@ -18,7 +18,7 @@ action. Consider this old-school almost obfuscated math problem:
 Incredibly hard to parse. But with `react-real-math` this is a breeze to
 understand:
 
-```js
+```jsx
 import { computeValue, Multiply, One, Two } from 'react-real-math'
 
 console.log(computeValue(
