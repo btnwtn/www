@@ -10,7 +10,7 @@ Partial application is a core concept for writing DRY (Don't Repeat
 Yourself) and expressive code. You can use partial application to
 compose and create new functions, and turn code like this:
 
-```js
+```jsx
 function sortFilesByName() {
   /* … */
 }
@@ -35,7 +35,7 @@ function sortFilesByDate() {
 
 into this:
 
-```js
+```jsx
 function sortFilesBy(prop) {
   /* … */
 }
@@ -229,7 +229,7 @@ to some real-world examples.
 
 Let's take a look at the example from the beginning of this article:
 
-```js
+```jsx
 function sortFilesByName() {
   /* … */
 }
@@ -290,7 +290,7 @@ function sortFilesBy(property) {
 
 We can use this function like so:
 
-```js
+```jsx
 <button onClick={sortFilesBy('name')}>Name</button>
 <button onClick={sortFilesBy('type')}>Type</button>
 <button onClick={sortFilesBy('filesize')}>Filesize</button>
