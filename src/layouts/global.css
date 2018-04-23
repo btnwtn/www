@@ -10,11 +10,17 @@ html {
 }
 
 body {
+  background-color: hsl(200, 33%, 96%);
   font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
     'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
     sans-serif;
   font-size: 1.1em;
-  color: #2d2d2d;
+  color: hsl(200, 31%, 14%);
+}
+
+::selection {
+  background: #073642; 
+  color: hsl(200, 25%, 94%);
 }
 
 a {
@@ -53,12 +59,14 @@ code[class*='language-'] {
 
 /* inline code blocks */
 :not(pre) > code[class*='language-'] {
+  border-radius: 0;
   font-size: 0.8em;
-  color: #586e75;
+  color: hsla(196, 13%, 32%, 1);
+  background-color: hsl(197, 43%, 116%);
 }
 
 .gatsby-highlight-code-line {
-  background-color: #feb;
+  background-color: #12343f;
   display: block;
   margin-right: -1em;
   margin-left: -1em;
@@ -72,7 +80,7 @@ code[class*='language-'] {
  * and overflow that we removed from <pre>.
  */
 .gatsby-highlight {
-  background-color: #fdf6e3;
+  background-color: #002b36;
   border-radius: 0.3em;
   font-size: 0.85em;
   margin: 0.5em 0;

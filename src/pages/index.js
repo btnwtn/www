@@ -32,23 +32,21 @@ export default ({ data }) => (
         and responsive Frontend development. Currently located in Brooklyn, NY.
       </p>
     </div>
-    {data.allMarkdownRemark.edges.map(({ node }) => (
-      <section key={node.id}>
-        <h1>
-          <Link to={node.fields.permalink}>
-            {node.frontmatter.title}{' '}
-            <span style={{ fontSize: '1rem', color: '#65767d' }}>
-              {node.frontmatter.date}
-            </span>
-          </Link>
-        </h1>
-        <Link to={node.fields.permalink}>
-          <p>
+    <div>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <section key={node.id} style={{ marginBottom: '1.5em' }}>
+          <h1 style={{ margin: 0, marginBottom: '.75rem' }}>
+            <Link to={node.fields.permalink}>{node.frontmatter.title}</Link>
+          </h1>
+          <p style={{ margin: 0, marginBottom: '.5em' }}>
             {node.frontmatter.excerpt ? node.frontmatter.excerpt : node.excerpt}
           </p>
-        </Link>
-      </section>
-    ))}
+          <span style={{ fontSize: '.75em', color: '#65767d' }}>
+            {node.frontmatter.date}
+          </span>
+        </section>
+      ))}
+    </div>
   </div>
 )
 

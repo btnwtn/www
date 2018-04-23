@@ -1,8 +1,8 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-require('prismjs/themes/prism-solarizedlight.css')
-require('./global.css')
+import 'prism-solarized-dark/prism-solarizeddark.css'
+import './global.css'
 
 const Layout = ({ children, data }) => (
   <div style={{ maxWidth: '40em', marginLeft: 'auto', marginRight: 'auto' }}>

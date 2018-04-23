@@ -11,6 +11,7 @@
     "gatsby-remark-twemoji": "0.0.2",
     "gatsby-source-filesystem": "^1.5.33",
     "gatsby-transformer-remark": "^1.7.40",
+    "prism-solarized-dark": "^1.0.1",
     "prismjs": "^1.14.0",
     "react-helmet": "^5.2.0"
   },
