@@ -10,6 +10,13 @@ p {
   line-height: 1.45;
 }
 
+img.emoji {
+  height: 1em;
+  width: 1em;
+  margin: 0 0.05em 0 0.1em;
+  vertical-align: -0.1em;
+}
+
 code[class*='language-'] {
   font-family: 'Input Mono', 'Operator Mono', Consolas, Monaco, 'Andale Mono',
     'Ubuntu Mono', monospace;

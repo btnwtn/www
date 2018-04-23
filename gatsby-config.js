@@ -23,6 +23,9 @@ module.exports = {
               aliases: {},
             },
           },
+          {
+            resolve: `gatsby-remark-twemoji`,
+          },
         ],
       },
     },
