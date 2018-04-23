@@ -1,9 +1,38 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
     'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
     sans-serif;
   font-size: 1.1em;
   color: #2d2d2d;
+}
+
+a {
+  color: #514dd6;
+}
+a:hover,
+a:active {
+  color: #1991db;
+}
+a:hover {
+  text-decoration: none;
+}
+a:visited {
+  color: #2b2392;
+}
+
+mark {
+  background-color: #ffffb4;
 }
 
 p {
@@ -23,9 +52,9 @@ code[class*='language-'] {
 }
 
 /* inline code blocks */
-:not(pre) > code[class*="language-"] {
-    font-size: .8em;
-    color: #586e75;
+:not(pre) > code[class*='language-'] {
+  font-size: 0.8em;
+  color: #586e75;
 }
 
 .gatsby-highlight-code-line {
